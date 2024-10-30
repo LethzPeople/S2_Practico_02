@@ -11,7 +11,7 @@ const superheroSchema = new mongoose.Schema({
     poderes: [String],
     aliados: [String],
     enemigos: [String],
-    creados: [String], 
+    creado: [String], 
     createdAt: { type: Date, default: Date.now }
 }, { collection: 'Grupo-07' });
 
@@ -42,7 +42,7 @@ async function insertSuperHero() {
         poderes: ['Controla el trueno', 'Inmortal', 'Super fuerza'],
         aliados: ['Loki'],
         enemigos: ['Hela'],
-        creados: ['Matias'] 
+        creado: ['Matias'] 
     });
 
     await hero.save();
